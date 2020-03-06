@@ -36,6 +36,26 @@ class GaleriaState extends State<Galeria>{
                     Container(
                       //Aquí va un cromo
                     ),
+                    Container(
+                      //Aquí va un cromo
+                    ),
+                    Container(
+                      //Aquí va un cromo
+                    ),
+                    Container(
+                      //Aquí va un cromo
+                    ),Container(
+                      //Aquí va un cromo
+                    ),
+                    Container(
+                      //Aquí va un cromo
+                    ),
+                    Container(
+                      //Aquí va un cromo
+                    ),
+                    Container(
+                      //Aquí va un cromo
+                    ),
                   ],
                 ),
               ),
