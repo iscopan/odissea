@@ -17,29 +17,31 @@ class GaleriaState extends State<Galeria>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-        body: CustomScrollView(
-          slivers: <Widget>[
-            // Agrega un app bar al CustomScrollView
-            SliverAppBar(
-              title: Text('Cromos de Segovia'),
-              floating: true,
-              backgroundColor: Color.fromRGBO(30, 250, 130, 100),
-            ),
-            // A continuación, crea un SliverList
-            SliverList(
-              // Para ello, se utiliza un delegado para crear elementos a medida que
-              // se desplazan por la pantalla.
-              delegate: SliverChildBuilderDelegate(
-                // La función builder devuelve un ListTile con un título que
-                // muestra el índice del elemento actual
-                    (context, index) => ListTile(title: Text('Item #$index')),
-                // Construye 1000 ListTiles
-                childCount: 20,
+      appBar: AppBar(
+        title: Text("Cromos de Segovia"),
+        backgroundColor: Color.fromRGBO(0, 220, 150, 1),
+      ),
+      body: Container(
+          child: CustomScrollView(
+            primary: false,
+            slivers: <Widget>[
+              SliverPadding(
+                padding: const EdgeInsets.all(20),
+                sliver: SliverGrid.count(
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  crossAxisCount: 2,
+                  children: <Widget>[
+                    //Los container serían los cromos
+                    Container(
+                      //Aquí va un cromo
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
-        ),
+            ],
+          )
+      ),
     );
   }
-
 }
