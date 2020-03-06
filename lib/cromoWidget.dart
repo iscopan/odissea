@@ -7,8 +7,6 @@ class cromoWidget extends StatelessWidget{
 
   const cromoWidget({Key key, @required this.cromoPasado}) : super(key: key);
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +15,9 @@ class cromoWidget extends StatelessWidget{
           child: Text(cromoPasado.nombre),
         )
       ),
-      
+      body: Container(
+
+      ),
 
     );
   }

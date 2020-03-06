@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:odissea/cromo.dart';
-import 'package:odissea/cromoWidget.dart';
+import 'package:odissea/vistaCromoWidget.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: cromoWidget(cromoPasado: cromoEjemplo),
+      home: VistaCromoWidget(cromoPasado: cromoEjemplo,),
     );
   }
 
