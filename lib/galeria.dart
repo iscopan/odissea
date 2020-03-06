@@ -22,15 +22,8 @@ class GaleriaState extends State<Galeria>{
             // Agrega un app bar al CustomScrollView
             SliverAppBar(
               title: Text('Cromos de Segovia'),
-              // Permite al usuario revelar el app bar si comienza a desplazarse
-              // hacia arriba en la lista de elementos
-              //Probablemente lo cambie
-
               floating: true,
-              // Mostrar un widget placeholder para visualizar el tamaño de reducción
-              flexibleSpace: Placeholder(),
-              // Aumentar la altura inicial de la SliverAppBar más de lo normal
-              expandedHeight: 200,
+              backgroundColor: Color.fromRGBO(30, 250, 130, 100),
             ),
             // A continuación, crea un SliverList
             SliverList(
@@ -41,7 +34,7 @@ class GaleriaState extends State<Galeria>{
                 // muestra el índice del elemento actual
                     (context, index) => ListTile(title: Text('Item #$index')),
                 // Construye 1000 ListTiles
-                childCount: 1000,
+                childCount: 20,
               ),
             ),
           ],
