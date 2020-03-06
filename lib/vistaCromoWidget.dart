@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odissea/cromo.dart';
+import 'package:odissea/cromoWidget.dart';
 
 class VistaCromoWidget extends StatelessWidget{
 
@@ -12,17 +13,26 @@ class VistaCromoWidget extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Center(
-            child: Text(cromoPasado.nombre),
-          )
+          title:
+             Text(cromoPasado.nombre),
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
 
-          ],
-          
-        ),
+      body: Container(
+        padding:  EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            children: [
+              cromoWidget(cromoPasado: cromoPasado,),
+              Row(
+                children: <Widget>[
+                  Text("hola")
+                ],
+              ),
+            ],
+
+          ),
+        )
+
       ),
 
     );

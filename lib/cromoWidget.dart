@@ -9,16 +9,10 @@ class cromoWidget extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text(cromoPasado.nombre),
-        )
+    return Container(
+      child: Expanded(
+        child: Image.asset(cromoPasado.rutaImg.toString()),
       ),
-      body: Container(
-
-      ),
-
     );
   }
 
