@@ -29,6 +29,7 @@ class VistaCromoWidgetState extends State<VistaCromoWidget>{
       appBar: AppBar(
         title:
         Text(widget.cromoPasado.nombre),
+        backgroundColor: Color.fromRGBO(0, 220, 150, 1),
       ),
 
       body: GestureDetector(

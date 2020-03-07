@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:odissea/cromo.dart';
+import 'package:odissea/vistaCromoWidget.dart';
 
 class Galeria extends StatefulWidget{
 
@@ -18,7 +19,7 @@ class Galeria extends StatefulWidget{
 class GaleriaState extends State<Galeria>{
   final Cromo cromoAcueducto = new Cromo(
     nombre: "Acueducto",
-    descripcion: "Está construido con sillares de granito asentados sin argamasa entre ellos. Sobre los tres arcos de mayor altura había en la época romana una cartela con letras de bronce donde constaba la fecha y el constructor.",
+    descripcion: "Monumento romano histórico de la ciudad de Segovia, famoso por sus leyendas",
     latitud: 40.9322427,
     longitud: -4.0898234,
     creador: "Ayuntamiento de Segovia",
@@ -35,7 +36,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoAlcazar = new Cromo(
     nombre: "Alcázar",
-    descripcion: "Se trata de uno de los castillos - palacio de finales de la Edad Media, comienzos de la Edad Moderna, más distintivos de toda Europa en virtud de su forma de proa de barco. Su imponente perfil se levanta, majestuoso, sobre el valle del Eresma",
+    descripcion: "Castillo segoviano de la época de la conquista musulmana de España, lo caracteriza su torreón",
     latitud: 40.9525725,
     longitud: -4.1325378,
     creador: "Ayuntamiento de Segovia",
@@ -52,7 +53,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoCatedral = new Cromo(
     nombre: "Catedral",
-    descripcion: "Conocida como la Dama de las Catedrales por sus dimensiones y su elegancia, es una catedral construida entre los siglos XVI y XVIII, de estilo gótico con algunos rasgos renacentistas. Está situada en la Plaza Mayor, cerca del Ayuntamiento.",
+    descripcion: "De la edad media, esta catedral está caracterizada por ser gótica con rasgos renacentistas",
     latitud: 40.9501039,
     longitud: -4.1253314,
     creador: "Ayuntamiento de Segovia",
@@ -62,7 +63,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoUniversidad = new Cromo(
     nombre: "Campus María Zambrano",
-    descripcion: "Ofrece estudios de pregrado y posgrado en humanidades, ciencias sociales, ingeniería y administración y dirección de empresas. Pertenece a la Universidad de Valladolid.",
+    descripcion: "Centro de estudio de la comunidad universitaria de Segovia. Pertenece a la Universidad de Valladolid",
     latitud: 40.943139,
     longitud: -4.114222,
     creador: "Ayuntamiento de Segovia",
@@ -89,7 +90,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoRenfe = new Cromo(
     nombre: "Estación de tren",
-    descripcion: "La estación de Segovia-Guiomar da servicio a la Línea de alta velocidad Madrid-Segovia-Valladolid. Está situada en el kilómetro 76 de dicha línea y a 7 kilómetros del centro de la ciudad de Segovia.",
+    descripcion: "Estación de Segovia-Guiomar con un gran afluente turístico debido al patrimonio histórico de Segovia.",
     latitud: 40.9101,
     longitud: -4.09492,
     creador: "Ayuntamiendo de Segovia",
@@ -99,7 +100,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoEstBus = new Cromo(
     nombre: "Estación de autobuses",
-    descripcion: "Gran parte del sustento económico de Segovia es el turismo, ya que la ciudad cuenta con gran cantidad de monumentos entre los que destacamos: el Acueducto de Segovia, el Alcázar de Segovia, la Catedral de Santa María",
+    descripcion: "Centro de salida de los autobuses que recorren la provincia de Segovia",
     latitud: 40.9451158,
     longitud: -4.1219865,
     creador: "Ayuntamiento de Segovia",
@@ -109,7 +110,7 @@ class GaleriaState extends State<Galeria>{
 
   final Cromo cromoTheatre = new Cromo(
     nombre: "Canavans-Theatre Segovia",
-    descripcion: "",
+    descripcion: "Un bar ambientado en un teatro y diseñado para desconectar toda preocupación durante la noche.",
     latitud: 40.9505245,
     longitud: -4.1223875,
     creador: "Ayuntamiendo de Segovia",
@@ -159,83 +160,147 @@ class GaleriaState extends State<Galeria>{
                   children: <Widget>[
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoAcueducto.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoAcueducto))
+                          );
+                        },
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoAcueducto.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoAlcazar.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoAlcazar,))
+                          );
+                        },
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoAlcazar.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoUniversidad.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoUniversidad.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoUniversidad,))
+                          );
+                        },
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoLuzCastilla.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoLuzCastilla.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoLuzCastilla,))
+                          );
+                        },
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child:Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoCatedral.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoCatedral.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoCatedral,))
+                          );
+                        },
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoEstBus.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoEstBus.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoEstBus,))
+                          );
+                        },
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoRenfe.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoRenfe.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoRenfe,))
+                          );
+                        },
+                      )
                     ),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5.0),
-                      child: Container(
-                        color: Color.fromRGBO(0, 220, 150, 1),
-                        child: Image.asset(
-                          cromoTheatre.rutaImg.toString(),
-                          fit: BoxFit.fill,
+                      child: GestureDetector(
+                        child: Container(
+                          color: Color.fromRGBO(0, 220, 150, 1),
+                          child: Image.asset(
+                            cromoTheatre.rutaImg.toString(),
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => VistaCromoWidget(cromoPasado: cromoTheatre,))
+                          );
+                        },
+                      )
                     ),
                   ],
                 ),
