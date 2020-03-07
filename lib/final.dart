@@ -36,7 +36,7 @@ class FinalTutorial extends StatelessWidget {
                 height: 200,
                 child: Image.asset(
                   'images/segovia.png',
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
