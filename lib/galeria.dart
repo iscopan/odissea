@@ -59,6 +59,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 05,
     rutaImg: 'images/catedral.jpg',
+    bus: 1,
+    calorias: 84,
+    cantidadCroquetas: 1,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 2,
+    co2: 33.93,
   );
 
   final Cromo cromoUniversidad = new Cromo(
@@ -69,6 +76,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 07,
     rutaImg: 'images/mariaZambrano.jpg',
+    bus: 4,
+    calorias: 0,
+    cantidadCroquetas: 0,
+    cantidadMacarrones: 0,
+    cantidadPatatas: 0,
+    cantidadPizza: 0,
+    co2: 0,
   );
 
   final Cromo cromoLuzCastilla = new Cromo(
@@ -96,6 +110,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiendo de Segovia",
     numeroCromo: 06,
     rutaImg: 'images/renfe.jpg',
+    bus: 12,
+    calorias: 244,
+    cantidadCroquetas: 4,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 6,
+    co2: 99.18,
   );
 
   final Cromo cromoEstBus = new Cromo(
@@ -106,6 +127,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 01,
     rutaImg: 'images/estBuses.jpg',
+    bus: 10,
+    calorias: 49,
+    cantidadCroquetas: 1,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 1,
+    co2: 19.83,
   );
 
   final Cromo cromoTheatre = new Cromo(
@@ -116,6 +144,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiendo de Segovia",
     numeroCromo: 02,
     rutaImg: 'images/theatre.jpg',
+    bus: 2,
+    calorias: 71,
+    cantidadCroquetas: 1,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 2,
+    co2: 28.71,
   );
 
   @override
