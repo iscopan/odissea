@@ -36,7 +36,7 @@ class UbicacionTutorial extends StatelessWidget {
                 height: 200,
                 child: Image.asset(
                   'images/ubicacion.jpg',
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
