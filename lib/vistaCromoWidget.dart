@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_conditional_rendering/conditional.dart';
 import 'package:odissea/cromo.dart';
 import 'package:odissea/cromoWidget.dart';
 
@@ -30,6 +29,7 @@ class VistaCromoWidgetState extends State<VistaCromoWidget>{
       appBar: AppBar(
         title:
         Text(widget.cromoPasado.nombre),
+        backgroundColor: Color.fromRGBO(0, 220, 150, 1),
       ),
 
       body: GestureDetector(
@@ -48,6 +48,7 @@ class VistaCromoWidgetState extends State<VistaCromoWidget>{
                     CromoWidget(cromoPasado: widget.cromoPasado,)
                   else
                     CromoWidgetDetras(cromoPasado: widget.cromoPasado,),
+                  Text("Estadísticas")
                 ],
 
               ),
