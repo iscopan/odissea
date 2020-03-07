@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_conditional_rendering/conditional.dart';
 import 'package:odissea/cromo.dart';
 import 'package:odissea/cromoWidget.dart';
 
