@@ -33,7 +33,10 @@ class UbicacionTutorial extends StatelessWidget {
             Container(
               width: 200,
               height: 200,
-              color: Colors.grey,
+              child: Image.asset(
+                'images/ubicacion.jpg',
+                fit: BoxFit.fill,
+              ),
             ),
             Padding(
               padding: EdgeInsets.all(20),
