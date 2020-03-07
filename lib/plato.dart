@@ -33,7 +33,10 @@ class PlatoTutorial extends StatelessWidget {
              Container(
                width: 200,
                height: 200,
-               color: Colors.grey,
+               child: Image.asset(
+                 'images/comida.png',
+                 fit: BoxFit.fill,
+               ),
              ),
              Padding(
                padding: EdgeInsets.all(12),
