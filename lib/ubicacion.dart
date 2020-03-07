@@ -30,12 +30,14 @@ class UbicacionTutorial extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(20),
             ),
-            Container(
-              width: 200,
-              height: 200,
-              child: Image.asset(
-                'images/ubicacion.jpg',
-                fit: BoxFit.fill,
+            Expanded(
+              child: Container(
+                width: 200,
+                height: 200,
+                child: Image.asset(
+                  'images/ubicacion.jpg',
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
             Padding(

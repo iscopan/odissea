@@ -11,6 +11,7 @@ class Cromo {
   String creador;
   int numeroCromo;
   String rutaImg;
+  int bus;
 
   Cromo({
     @required this.nombre,
@@ -19,7 +20,8 @@ class Cromo {
     @required this.longitud,
     @required this.creador,
     @required this.numeroCromo,
-    @required this.rutaImg
+    @required this.rutaImg,
+    @required this.bus
   });
 
 }

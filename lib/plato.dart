@@ -30,12 +30,14 @@ class PlatoTutorial extends StatelessWidget {
              Padding(
                padding: EdgeInsets.all(15),
              ),
-             Container(
-               width: 200,
-               height: 200,
-               child: Image.asset(
-                 'images/comida.png',
-                 fit: BoxFit.fill,
+             Expanded(
+               child: Container(
+                 width: 200,
+                 height: 200,
+                 child: Image.asset(
+                   'images/comida.png',
+                   fit: BoxFit.fill,
+                 ),
                ),
              ),
              Padding(
