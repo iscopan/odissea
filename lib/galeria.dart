@@ -32,7 +32,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.1325378,
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 03,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/alcazar.jpg',
   );
 
   final Cromo cromoCatedral = new Cromo(
@@ -42,7 +42,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.1253314,
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 05,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/catedral.jpg',
   );
 
   final Cromo cromoUniversidad = new Cromo(
@@ -52,7 +52,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.114222,
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 07,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/mariaZambrano.jpg',
   );
 
   final Cromo cromoLuzCastilla = new Cromo(
@@ -62,7 +62,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.1116797,
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 09,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/luzCastilla.jpeg',
   );
 
   final Cromo cromoRenfe = new Cromo(
@@ -72,7 +72,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.09492,
     creador: "Ayuntamiendo de Segovia",
     numeroCromo: 06,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/renfe.jpg',
   );
 
   final Cromo cromoEstBus = new Cromo(
@@ -82,7 +82,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.1219865,
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 01,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/estBuses.jpg',
   );
 
   final Cromo cromoTheatre = new Cromo(
@@ -92,7 +92,7 @@ class GaleriaState extends State<Galeria>{
     longitud: -4.1223875,
     creador: "Ayuntamiendo de Segovia",
     numeroCromo: 02,
-    rutaImg: 'images/acueducto.jpg',
+    rutaImg: 'images/theatre.jpg',
   );
 
   @override
@@ -112,38 +112,100 @@ class GaleriaState extends State<Galeria>{
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
                   crossAxisCount: 2,
+                  childAspectRatio: 3/4,
                   children: <Widget>[
                     //Los container serían los cromos
                     Container(
-                      height: 30,
-                      width: 40,
-                      child: Image.asset(cromoAcueducto.rutaImg.toString()),
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoAcueducto.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoAlcazar.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoUniversidad.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
-                    ),Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoLuzCastilla.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoCatedral.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoEstBus.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     Container(
-                      //Aquí va un cromo
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoRenfe.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Container(
+                      color: Color.fromRGBO(0, 220, 150, 1),
+                      child: Image.asset(
+                        cromoTheatre.rutaImg.toString(),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ],
                 ),
               ),
             ],
           )
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Color.fromRGBO(0, 220, 150, 1),
+        unselectedItemColor: Color.fromRGBO(0, 220, 150, 1),
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.find_in_page
+            ),
+            title: Text(
+                'Filtros'
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                Icons.add
+            ),
+            title: Text(
+                'Cromos Privados'
+            ),
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                  Icons.person_pin
+              ),
+              title: Text(
+                  'Perfil'
+              ),
+          ),
+        ],
       ),
     );
   }
