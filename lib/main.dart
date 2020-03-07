@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       creador: "Ayuntamiendo de Segovia",
       numeroCromo: 06,
       rutaImg: 'images/acueducto.jpg',
+      bus: 5
   );
 
   @override
