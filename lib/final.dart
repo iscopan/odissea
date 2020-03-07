@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:odissea/galeria.dart';
 
 class FinalTutorial extends StatelessWidget {
 
@@ -56,6 +57,10 @@ class FinalTutorial extends StatelessWidget {
               minWidth: 150,
               height: 60,
               onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Galeria(platoFav: platoFav))
+                );
               },
               color: Color.fromRGBO(0, 220, 150, 100),
               child: const Text(
