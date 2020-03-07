@@ -44,6 +44,10 @@ flutter:
     - images/luzCastilla.jpeg
     - images/renfe.jpg
     - images/theatre.jpg
+    - images/segovia.png
+    - images/logo.png
+    - images/comida.png
+    - images/ubicacion.jpg
 
   uses-material-design: true
 
