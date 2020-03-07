@@ -57,9 +57,10 @@ class FinalTutorial extends StatelessWidget {
               minWidth: 150,
               height: 60,
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Galeria(platoFav: platoFav))
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) =>  Galeria(platoFav: platoFav)),
+                      (Route<dynamic> route) => false,
                 );
               },
               color: Color.fromRGBO(0, 220, 150, 100),
