@@ -114,61 +114,84 @@ class GaleriaState extends State<Galeria>{
                   crossAxisCount: 2,
                   childAspectRatio: 3/4,
                   children: <Widget>[
-                    //Los container serían los cromos
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoAcueducto.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoAcueducto.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoAlcazar.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoAlcazar.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoUniversidad.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoUniversidad.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoLuzCastilla.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoLuzCastilla.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoCatedral.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child:Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoCatedral.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoEstBus.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoEstBus.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoRenfe.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoRenfe.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                    Container(
-                      color: Color.fromRGBO(0, 220, 150, 1),
-                      child: Image.asset(
-                        cromoTheatre.rutaImg.toString(),
-                        fit: BoxFit.fill,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(5.0),
+                      child: Container(
+                        color: Color.fromRGBO(0, 220, 150, 1),
+                        child: Image.asset(
+                          cromoTheatre.rutaImg.toString(),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                   ],
