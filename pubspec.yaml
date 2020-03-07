@@ -36,10 +36,14 @@ dev_dependencies:
 flutter:
 
   assets:
-    - images/comida.png
-    - images/segovia.png
-    - images/ubicacion.jpg
-    - images/logo.png
+    - images/acueducto.jpg
+    - images/alcazar.jpg
+    - images/catedral.jpg
+    - images/mariaZambrano.jpg
+    - images/estBuses.jpg
+    - images/luzCastilla.jpeg
+    - images/renfe.jpg
+    - images/theatre.jpg
 
   uses-material-design: true
 
