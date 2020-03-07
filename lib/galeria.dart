@@ -4,8 +4,9 @@ import 'package:odissea/cromo.dart';
 
 class Galeria extends StatefulWidget{
 
+  final int platoFav;
 
-  const Galeria({Key key}) : super(key: key);
+  const Galeria({Key key, @required this.platoFav}) : super(key: key);
 
   @override
   State<Galeria> createState(){
@@ -200,6 +201,7 @@ class GaleriaState extends State<Galeria>{
             ],
           )
       ),
+      
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Color.fromRGBO(0, 220, 150, 1),
         unselectedItemColor: Color.fromRGBO(0, 220, 150, 1),
