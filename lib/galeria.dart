@@ -102,6 +102,27 @@ class GaleriaState extends State<Galeria>{
       appBar: AppBar(
         title: Text("Cromos de Segovia"),
         backgroundColor: Color.fromRGBO(0, 220, 150, 1),
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 15, top: 10, bottom: 10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Container(
+                padding: EdgeInsets.all(5),
+                color: Color.fromRGBO(00, 200, 120, 1),
+                child: Row(
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.only(right: 2),),
+                    Text("165"),
+                    Padding(padding: EdgeInsets.only(right: 2),),
+                    Icon(Icons.monetization_on, color: Colors.white,)
+                  ],
+                ),
+
+              ),
+            ),
+          ),
+        ],
       ),
       body: Container(
           child: CustomScrollView(
