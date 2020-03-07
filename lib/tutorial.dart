@@ -29,14 +29,16 @@ class PantallaTutorial extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(20),
             ),
-            Container(
-              width: 200,
-              height: 200,
-              child: Image.asset(
-                'images/logo.png',
-                fit: BoxFit.fill,
+            Expanded(
+              child: Container(
+                width: 200,
+                height: 200,
+                child: Image.asset(
+                  'images/logo.png',
+                  fit: BoxFit.fill,
+                ),
               ),
-              ),
+            ),
             Padding(
               padding: EdgeInsets.all(20),
             ),
