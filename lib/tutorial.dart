@@ -35,7 +35,7 @@ class PantallaTutorial extends StatelessWidget {
                 height: 200,
                 child: Image.asset(
                   'images/logo.png',
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
