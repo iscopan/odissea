@@ -29,6 +29,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_launcher_icons: ^0.7.4
+
+flutter_icons:
+  image_path: 'images/icon.png'
+  android: true
+  ios: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -38,6 +44,17 @@ flutter:
 
   assets:
     - images/acueducto.jpg
+    - images/alcazar.jpg
+    - images/catedral.jpg
+    - images/mariaZambrano.jpg
+    - images/estBuses.jpg
+    - images/luzCastilla.jpeg
+    - images/renfe.jpg
+    - images/theatre.jpg
+    - images/segovia.png
+    - images/logo.png
+    - images/comida.png
+    - images/ubicacion.jpg
 
   uses-material-design: true
 
