@@ -59,7 +59,7 @@ class UbicacionTutorial extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => FinalTutorial(platoFav: 1))
+                    MaterialPageRoute(builder: (context) => FinalTutorial(platoFav: platoFav))
                 );
               },
               color: Color.fromRGBO(0, 220, 150, 100),

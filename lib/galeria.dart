@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 class Galeria extends StatefulWidget{
 
+  final int platoFav;
 
-  const Galeria({Key key}) : super(key: key);
+  const Galeria({Key key, @required this.platoFav}) : super(key: key);
 
   @override
   State<Galeria> createState(){
