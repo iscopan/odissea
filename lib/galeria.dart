@@ -25,6 +25,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 06,
     rutaImg: 'images/acueducto.jpg',
+    bus: 6,
+    calorias: 44,
+    cantidadCroquetas: 1,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 1,
+    co2: 17.74,
   );
 
   final Cromo cromoAlcazar = new Cromo(
@@ -35,6 +42,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 03,
     rutaImg: 'images/alcazar.jpg',
+    bus: 3,
+    calorias: 122,
+    cantidadCroquetas: 2,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 3,
+    co2: 49.59,
   );
 
   final Cromo cromoCatedral = new Cromo(
@@ -65,6 +79,13 @@ class GaleriaState extends State<Galeria>{
     creador: "Ayuntamiento de Segovia",
     numeroCromo: 09,
     rutaImg: 'images/luzCastilla.jpeg',
+    bus: 10,
+    calorias: 148,
+    cantidadCroquetas: 2,
+    cantidadMacarrones: 1,
+    cantidadPatatas: 1,
+    cantidadPizza: 4,
+    co2: 60,
   );
 
   final Cromo cromoRenfe = new Cromo(
