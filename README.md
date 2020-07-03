@@ -1,7 +1,7 @@
-# Odissea
+# Odissea --> BuscaPelos
 
-Un viaje de cuerpo y mente
+Un Google Maps cutre
 
 ---
 
-*Aplicación creada para el Hackerfest 2020, original de OOZMA KAPPA*
+*Aplicación creada a partir de Odissea (Hackerfest 2020, original de OOZMA KAPPA)*
