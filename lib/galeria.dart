@@ -16,8 +16,7 @@ class Galeria extends StatefulWidget{
 
 }
 
-class GaleriaState extends State<Galeria> {
-
+class GaleriaState extends State<Galeria>{
   final Cromo cromoAcueducto = new Cromo(
     nombre: "Acueducto",
     descripcion: "Monumento romano histórico de la ciudad de Segovia, famoso por sus leyendas",
